@@ -39,7 +39,7 @@ A production-ready REST API for money transfers featuring:
 
 ### Hexagonal Architecture
 
-<img src="docs/img/HexArch.png" alt="Hexagonal Arch" width="300" height="400" />
+<img src="https://github.com/reinaldoman/ontop-bc/blob/develop/docs/img/HexArch.png" alt="Hexagonal Arch" width="300" height="400" />
          
          
          
