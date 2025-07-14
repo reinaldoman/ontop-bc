@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+mock:
+  api:
+    base-url: http://mockoon.tools.getontop.com:3000
+    payments-url: ${mock.api.base-url}/api/v1/payments
+    wallet-transactions-url: ${mock.api.base-url}/wallets/transactions
+    balance-url: ${mock.api.base-url}/wallets/balance
+
+ontop:
+  company:
+    account:
+      number: "0245253419"
+      routing-number: "028444018"
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:ontopdb
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.H2Dialect
